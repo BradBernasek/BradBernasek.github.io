@@ -1,0 +1,179 @@
+{
+  "registryVersion": 1,
+  "registryDateEastern": "2026-11-09",
+  "changeLog": [
+    {
+      "version": 1,
+      "dateEastern": "2026-11-09",
+      "note": "First registry (REV 16.1 Step 0). Moved every health threshold, schedule and safety wording out of Swift and index.html into this file."
+    }
+  ],
+  "entries": [
+    {
+      "id": "bmi.adult.bands",
+      "values": {
+        "formula": "weight in kg divided by height in metres squared",
+        "underweightBelow": 18.5,
+        "healthyBelow": 25,
+        "overweightBelow": 30,
+        "labels": {
+          "underweight": "Underweight range",
+          "healthy": "Healthy range",
+          "overweight": "Overweight range",
+          "obesity": "Obesity range"
+        }
+      },
+      "meaning": "Adult (20+) BMI category cutoffs shown beside the BMI read from Apple Health. A screening measure, not a diagnosis.",
+      "issuer": "CDC",
+      "sourceURL": "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+      "sourceVersionDate": "2024-03-19 (page last reviewed)",
+      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "note": "Class 1/2/3 obesity splits (35, 40) exist at the source; the app shows one Obesity range.",
+      "verify": [
+        "Less than 18\\.5",
+        "18\\.5 to less than 25",
+        "25 to less than 30",
+        "30 or greater"
+      ]
+    },
+    {
+      "id": "uv.bands",
+      "values": {
+        "bands": [
+          {
+            "name": "Low",
+            "min": 0,
+            "colorName": "Green",
+            "hex": "#3EC24B"
+          },
+          {
+            "name": "Moderate",
+            "min": 3,
+            "colorName": "Yellow",
+            "hex": "#F7E400"
+          },
+          {
+            "name": "High",
+            "min": 6,
+            "colorName": "Orange",
+            "hex": "#F87A1C"
+          },
+          {
+            "name": "Very High",
+            "min": 8,
+            "colorName": "Red",
+            "hex": "#F02D3A"
+          },
+          {
+            "name": "Extreme",
+            "min": 11,
+            "colorName": "Violet",
+            "hex": "#A37BF7"
+          }
+        ]
+      },
+      "meaning": "Global Solar UV Index exposure categories and their colour code, used for the widget's UV number, level word and colour.",
+      "issuer": "WHO / WMO / UNEP / ICNIRP (Global Solar UV Index)",
+      "sourceURL": "https://www.icnirp.org/en/applications/uv-index/index.html",
+      "sourceVersionDate": "Global Solar UVI 2002; Review workshop report 2017 (page undated)",
+      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "note": "WHO's own Q&A (2022) groups the same scale into 0-2, 3-7, 8+ with advice; the five-band table is the global index. Hex values are the app's rendering of the official colour names.",
+      "verify": [
+        "0\\s*[-–]\\s*2",
+        "3\\s*[-–]\\s*5",
+        "6\\s*[-–]\\s*7",
+        "8\\s*[-–]\\s*10",
+        "11\\s*\\+",
+        "Very High",
+        "Extreme"
+      ]
+    },
+    {
+      "id": "abcde.letters",
+      "values": {
+        "letters": [
+          {
+            "letter": "A",
+            "word": "Asymmetry"
+          },
+          {
+            "letter": "B",
+            "word": "Border"
+          },
+          {
+            "letter": "C",
+            "word": "Color"
+          },
+          {
+            "letter": "D",
+            "word": "Diameter"
+          },
+          {
+            "letter": "E",
+            "word": "Evolving"
+          }
+        ]
+      },
+      "meaning": "The ABCDE warning signs of melanoma shown on Findings when a spot has changed.",
+      "issuer": "American Academy of Dermatology",
+      "sourceURL": "https://aad.org/public/diseases/skin-cancer/find/at-risk/abcdes",
+      "sourceVersionDate": "undated page (copyright 2026)",
+      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "note": "The source describes D as usually greater than 6 mm; the app shows the word only and never states a size.",
+      "verify": [
+        "Asymmetry",
+        "Border",
+        "Color",
+        "Diameter",
+        "Evolving"
+      ]
+    },
+    {
+      "id": "selfexam.monthly",
+      "values": {
+        "intervalDays": 30,
+        "label": "Monthly",
+        "shortText": "Monthly is what the Skin Cancer Foundation recommends.",
+        "whyText": "The Skin Cancer Foundation recommends a head-to-toe self-exam every month and a dermatologist full-body exam at least once a year."
+      },
+      "meaning": "Default skin self-exam / scan reminder cadence and the wording that explains it.",
+      "issuer": "Skin Cancer Foundation",
+      "sourceURL": "https://www.skincancer.org/early-detection/self-exams/",
+      "sourceVersionDate": "2024-07-02 (page metadata modified date)",
+      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "note": "More frequent cadences in Settings (every 2 weeks, weekly) are the user's choice, not guidance.",
+      "verify": [
+        "head-to-toe",
+        "once a month"
+      ]
+    },
+    {
+      "id": "derm.yearly",
+      "values": {
+        "intervalDays": 365
+      },
+      "meaning": "Professional full-body skin exam interval used for the yearly dermatologist reminder.",
+      "issuer": "Skin Cancer Foundation",
+      "sourceURL": "https://www.skincancer.org/early-detection/self-exams/",
+      "sourceVersionDate": "2024-07-02 (page metadata modified date)",
+      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "note": "The 2-week lead time before the anniversary is the app's own nudge, not guidance.",
+      "verify": [
+        "at least once a year"
+      ]
+    },
+    {
+      "id": "consult.text",
+      "values": {
+        "text": "ALWAYS CONSULT WITH A LICENSED HEALTH CARE PROVIDER"
+      },
+      "meaning": "The standing safety bar shown on Findings (when something is flagged) and in Settings.",
+      "issuer": "The Body Guard (own safety wording, set by B Rad 2026-10-01)",
+      "sourceURL": "",
+      "sourceVersionDate": "own wording",
+      "lastVerifiedEastern": "own wording (no external source)",
+      "note": "No external source to re-check; it is the app's own rule. Kept here so no health wording lives outside the registry.",
+      "verify": []
+    }
+  ]
+}
