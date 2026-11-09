@@ -1,11 +1,16 @@
 {
-  "registryVersion": 1,
+  "registryVersion": 2,
   "registryDateEastern": "2026-11-09",
   "changeLog": [
     {
       "version": 1,
       "dateEastern": "2026-11-09",
       "note": "First registry (REV 16.1 Step 0). Moved every health threshold, schedule and safety wording out of Swift and index.html into this file."
+    },
+    {
+      "version": 2,
+      "dateEastern": "2026-11-09",
+      "note": "Added the numbers behind Body Check: waist-to-height bands (NICE NG246) and the NHS half-height line, waist action levels (BMJ 1995), body-fat circumference method (US DoD), resting energy (Mifflin-St Jeor)."
     }
   ],
   "entries": [
@@ -27,7 +32,7 @@
       "issuer": "CDC",
       "sourceURL": "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
       "sourceVersionDate": "2024-03-19 (page last reviewed)",
-      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
       "note": "Class 1/2/3 obesity splits (35, 40) exist at the source; the app shows one Obesity range.",
       "verify": [
         "Less than 18\\.5",
@@ -76,7 +81,7 @@
       "issuer": "WHO / WMO / UNEP / ICNIRP (Global Solar UV Index)",
       "sourceURL": "https://www.icnirp.org/en/applications/uv-index/index.html",
       "sourceVersionDate": "Global Solar UVI 2002; Review workshop report 2017 (page undated)",
-      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
       "note": "WHO's own Q&A (2022) groups the same scale into 0-2, 3-7, 8+ with advice; the five-band table is the global index. Hex values are the app's rendering of the official colour names.",
       "verify": [
         "0\\s*[-–]\\s*2",
@@ -118,7 +123,7 @@
       "issuer": "American Academy of Dermatology",
       "sourceURL": "https://aad.org/public/diseases/skin-cancer/find/at-risk/abcdes",
       "sourceVersionDate": "undated page (copyright 2026)",
-      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
       "note": "The source describes D as usually greater than 6 mm; the app shows the word only and never states a size.",
       "verify": [
         "Asymmetry",
@@ -140,7 +145,7 @@
       "issuer": "Skin Cancer Foundation",
       "sourceURL": "https://www.skincancer.org/early-detection/self-exams/",
       "sourceVersionDate": "2024-07-02 (page metadata modified date)",
-      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
       "note": "More frequent cadences in Settings (every 2 weeks, weekly) are the user's choice, not guidance.",
       "verify": [
         "head-to-toe",
@@ -156,10 +161,128 @@
       "issuer": "Skin Cancer Foundation",
       "sourceURL": "https://www.skincancer.org/early-detection/self-exams/",
       "sourceVersionDate": "2024-07-02 (page metadata modified date)",
-      "lastVerifiedEastern": "2026-11-09 17:22 ET",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
       "note": "The 2-week lead time before the anniversary is the app's own nudge, not guidance.",
       "verify": [
         "at least once a year"
+      ]
+    },
+    {
+      "id": "whtr.bands",
+      "values": {
+        "healthyFrom": 0.4,
+        "increasedFrom": 0.5,
+        "highFrom": 0.6,
+        "labels": {
+          "healthy": "Healthy",
+          "increased": "Increased",
+          "high": "High"
+        }
+      },
+      "meaning": "Waist-to-height ratio bands for adults: healthy 0.4 to 0.49, increased 0.5 to 0.59, high 0.6 or more.",
+      "issuer": "NICE (NG246)",
+      "sourceURL": "https://www.nice.org.uk/guidance/NG246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity",
+      "sourceVersionDate": "NG246 recommendations (page undated; recommendation tags 2006-2026)",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "note": "NICE words the bands as central adiposity with no / increased / further increased health risks. The app shows only the band names plus the consult bar.",
+      "verify": [
+        "waist-to-height ratio 0\\.4 to 0\\.49",
+        "waist-to-height ratio 0\\.5 to 0\\.59",
+        "waist-to-height ratio 0\\.6 or more"
+      ]
+    },
+    {
+      "id": "whtr.halfheight",
+      "values": {
+        "text": "Keep your waist under half your height."
+      },
+      "meaning": "The one-line waist-to-height advice shown with the ratio.",
+      "issuer": "NHS (Obesity)",
+      "sourceURL": "https://www.nhs.uk/conditions/obesity/",
+      "sourceVersionDate": "page last reviewed 2026-04-29; next review 2029-04-29",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "note": "NHS states: try to keep your waist size to less than half your height.",
+      "verify": [
+        "less than half your height"
+      ]
+    },
+    {
+      "id": "waist.flags",
+      "values": {
+        "unit": "cm",
+        "men": {
+          "watch": 94,
+          "act": 102
+        },
+        "women": {
+          "watch": 80,
+          "act": 88
+        }
+      },
+      "meaning": "Waist circumference action levels: at or above the first number, gain no further weight; at or above the second, reduce weight.",
+      "issuer": "BMJ 1995 (Lean, Han, Morrison): Waist circumference as a measure for indicating need for weight management",
+      "sourceURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2550221/",
+      "sourceVersionDate": "1995-07-15 (BMJ 311:158-161)",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "note": "Original peer-reviewed source of the 94/102 cm (men) and 80/88 cm (women) action levels; the NHS page no longer lists them.",
+      "verify": [
+        "94 cm",
+        "102 cm",
+        "80 cm",
+        "88 cm"
+      ]
+    },
+    {
+      "id": "bodyfat.navy",
+      "values": {
+        "unit": "cm",
+        "inchesDivisor": 2.54,
+        "men": {
+          "waistMinusNeck": 86.01,
+          "height": 70.041,
+          "constant": 36.76
+        },
+        "women": {
+          "waistPlusHipMinusNeck": 163.205,
+          "height": 97.684,
+          "constant": 78.387
+        }
+      },
+      "meaning": "US DoD circumference body-fat estimate (Navy method): men = 86.010 x log10(waist - neck) - 70.041 x log10(height) + 36.76; women = 163.205 x log10(waist + hip - neck) - 97.684 x log10(height) - 78.387; measurements in inches (the app converts from cm).",
+      "issuer": "US Dept of Defense (Hodgdon & Beckett 1984; Hodgdon & Friedl 1999), as reproduced in Foulis et al., Frontiers in Physiology 2023",
+      "sourceURL": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2023.1183836/full",
+      "sourceVersionDate": "2023-06-07 (article published)",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "note": "An estimate. The same article reports circumference methods do not reliably capture small body-composition changes, so the app labels it an estimate and does not rate it.",
+      "verify": [
+        "86\\.010",
+        "70\\.041",
+        "36\\.76",
+        "163\\.205",
+        "97\\.684",
+        "78\\.387"
+      ]
+    },
+    {
+      "id": "rmr.mifflin",
+      "values": {
+        "weightKg": 9.99,
+        "heightCm": 6.25,
+        "ageYears": 4.92,
+        "maleAdd": 166,
+        "constant": -161
+      },
+      "meaning": "Mifflin-St Jeor resting energy: 9.99 x weight(kg) + 6.25 x height(cm) - 4.92 x age + 166 x sex (male 1, female 0) - 161, in kcal per day.",
+      "issuer": "Mifflin MD, St Jeor ST et al., Am J Clin Nutr 1990;51:241-247 (PubMed 2305711)",
+      "sourceURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:2305711%20AND%20SRC:MED&resultType=core&format=json",
+      "sourceVersionDate": "1990-02 (journal issue)",
+      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "note": "A population estimate of resting energy use in healthy adults, not a measurement.",
+      "verify": [
+        "9\\.99 x weight",
+        "6\\.25 x height",
+        "4\\.92 x age",
+        "166 x sex"
       ]
     },
     {
