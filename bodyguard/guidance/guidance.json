@@ -1,5 +1,5 @@
 {
-  "registryVersion": 2,
+  "registryVersion": 3,
   "registryDateEastern": "2026-11-09",
   "changeLog": [
     {
@@ -11,6 +11,11 @@
       "version": 2,
       "dateEastern": "2026-11-09",
       "note": "Added the numbers behind Body Check: waist-to-height bands (NICE NG246) and the NHS half-height line, waist action levels (BMJ 1995), body-fat circumference method (US DoD), resting energy (Mifflin-St Jeor)."
+    },
+    {
+      "version": 3,
+      "dateEastern": "2026-11-09",
+      "note": "Added the numbers behind Body Age, the fitness tests and My Plan: waist-to-hip cut-off (WHO), cardio fitness by age (FRIEND registry), 1-minute sit-to-stand by age (Strassmann 2013), one-leg balance by age (Springer 2007), 30-second chair stand (CDC STEADI), weekly activity targets (CDC)."
     }
   ],
   "entries": [
@@ -32,7 +37,7 @@
       "issuer": "CDC",
       "sourceURL": "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
       "sourceVersionDate": "2024-03-19 (page last reviewed)",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "Class 1/2/3 obesity splits (35, 40) exist at the source; the app shows one Obesity range.",
       "verify": [
         "Less than 18\\.5",
@@ -81,7 +86,7 @@
       "issuer": "WHO / WMO / UNEP / ICNIRP (Global Solar UV Index)",
       "sourceURL": "https://www.icnirp.org/en/applications/uv-index/index.html",
       "sourceVersionDate": "Global Solar UVI 2002; Review workshop report 2017 (page undated)",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "WHO's own Q&A (2022) groups the same scale into 0-2, 3-7, 8+ with advice; the five-band table is the global index. Hex values are the app's rendering of the official colour names.",
       "verify": [
         "0\\s*[-–]\\s*2",
@@ -123,7 +128,7 @@
       "issuer": "American Academy of Dermatology",
       "sourceURL": "https://aad.org/public/diseases/skin-cancer/find/at-risk/abcdes",
       "sourceVersionDate": "undated page (copyright 2026)",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "The source describes D as usually greater than 6 mm; the app shows the word only and never states a size.",
       "verify": [
         "Asymmetry",
@@ -145,7 +150,7 @@
       "issuer": "Skin Cancer Foundation",
       "sourceURL": "https://www.skincancer.org/early-detection/self-exams/",
       "sourceVersionDate": "2024-07-02 (page metadata modified date)",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "More frequent cadences in Settings (every 2 weeks, weekly) are the user's choice, not guidance.",
       "verify": [
         "head-to-toe",
@@ -161,7 +166,7 @@
       "issuer": "Skin Cancer Foundation",
       "sourceURL": "https://www.skincancer.org/early-detection/self-exams/",
       "sourceVersionDate": "2024-07-02 (page metadata modified date)",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "The 2-week lead time before the anniversary is the app's own nudge, not guidance.",
       "verify": [
         "at least once a year"
@@ -183,7 +188,7 @@
       "issuer": "NICE (NG246)",
       "sourceURL": "https://www.nice.org.uk/guidance/NG246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity",
       "sourceVersionDate": "NG246 recommendations (page undated; recommendation tags 2006-2026)",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "NICE words the bands as central adiposity with no / increased / further increased health risks. The app shows only the band names plus the consult bar.",
       "verify": [
         "waist-to-height ratio 0\\.4 to 0\\.49",
@@ -200,7 +205,7 @@
       "issuer": "NHS (Obesity)",
       "sourceURL": "https://www.nhs.uk/conditions/obesity/",
       "sourceVersionDate": "page last reviewed 2026-04-29; next review 2029-04-29",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "NHS states: try to keep your waist size to less than half your height.",
       "verify": [
         "less than half your height"
@@ -221,16 +226,17 @@
       },
       "meaning": "Waist circumference action levels: at or above the first number, gain no further weight; at or above the second, reduce weight.",
       "issuer": "BMJ 1995 (Lean, Han, Morrison): Waist circumference as a measure for indicating need for weight management",
-      "sourceURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2550221/",
+      "sourceURL": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2550221",
       "sourceVersionDate": "1995-07-15 (BMJ 311:158-161)",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "Original peer-reviewed source of the 94/102 cm (men) and 80/88 cm (women) action levels; the NHS page no longer lists them.",
       "verify": [
         "94 cm",
         "102 cm",
         "80 cm",
         "88 cm"
-      ]
+      ],
+      "pageURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2550221/"
     },
     {
       "id": "bodyfat.navy",
@@ -252,7 +258,7 @@
       "issuer": "US Dept of Defense (Hodgdon & Beckett 1984; Hodgdon & Friedl 1999), as reproduced in Foulis et al., Frontiers in Physiology 2023",
       "sourceURL": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2023.1183836/full",
       "sourceVersionDate": "2023-06-07 (article published)",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "An estimate. The same article reports circumference methods do not reliably capture small body-composition changes, so the app labels it an estimate and does not rate it.",
       "verify": [
         "86\\.010",
@@ -276,7 +282,7 @@
       "issuer": "Mifflin MD, St Jeor ST et al., Am J Clin Nutr 1990;51:241-247 (PubMed 2305711)",
       "sourceURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:2305711%20AND%20SRC:MED&resultType=core&format=json",
       "sourceVersionDate": "1990-02 (journal issue)",
-      "lastVerifiedEastern": "2026-11-09 18:12 ET",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
       "note": "A population estimate of resting energy use in healthy adults, not a measurement.",
       "verify": [
         "9\\.99 x weight",
@@ -284,6 +290,530 @@
         "4\\.92 x age",
         "166 x sex"
       ]
+    },
+    {
+      "id": "whr.who",
+      "values": {
+        "men": 0.9,
+        "women": 0.85,
+        "labels": {
+          "below": "Below the WHO cut-off",
+          "atOrAbove": "At or above the WHO cut-off"
+        }
+      },
+      "meaning": "Waist-to-hip ratio (waist divided by hips). WHO cut-off: 0.90 or more for men, 0.85 or more for women.",
+      "issuer": "World Health Organization: Waist circumference and waist-hip ratio, report of a WHO expert consultation (Geneva, 8-11 December 2008)",
+      "sourceURL": "https://iris.who.int/server/api/core/bitstreams/ca408ade-05c9-4b7c-8967-6ee5b5e0ccd8/content",
+      "sourceVersionDate": "2011 (report published; consultation held 2008-12)",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "note": "WHO lists these cut-offs with the wording 'substantially increased' risk of metabolic complications. The app shows the cut-off and the consult bar, never a disease.",
+      "verify": [
+        "Waist.hip ratio\\s*≥\\s*0\\.90\\s*cm\\s*\\(M\\);\\s*≥\\s*0\\.85\\s*cm\\s*\\(W\\)\\s*Substantially increased"
+      ]
+    },
+    {
+      "id": "vo2.friend",
+      "values": {
+        "unit": "mL/kg/min",
+        "labels": {
+          "below": "Below the usual range",
+          "within": "In the usual range",
+          "above": "Above the usual range"
+        },
+        "groups": [
+          {
+            "from": 20,
+            "to": 29,
+            "men": {
+              "p25": 40.1,
+              "p50": 48.0,
+              "p75": 55.2
+            },
+            "women": {
+              "p25": 30.5,
+              "p50": 37.6,
+              "p75": 44.7
+            }
+          },
+          {
+            "from": 30,
+            "to": 39,
+            "men": {
+              "p25": 35.9,
+              "p50": 42.4,
+              "p75": 49.2
+            },
+            "women": {
+              "p25": 25.3,
+              "p50": 30.2,
+              "p75": 36.1
+            }
+          },
+          {
+            "from": 40,
+            "to": 49,
+            "men": {
+              "p25": 31.9,
+              "p50": 37.8,
+              "p75": 45.0
+            },
+            "women": {
+              "p25": 22.1,
+              "p50": 26.7,
+              "p75": 32.4
+            }
+          },
+          {
+            "from": 50,
+            "to": 59,
+            "men": {
+              "p25": 27.1,
+              "p50": 32.6,
+              "p75": 39.7
+            },
+            "women": {
+              "p25": 19.9,
+              "p50": 23.4,
+              "p75": 27.6
+            }
+          },
+          {
+            "from": 60,
+            "to": 69,
+            "men": {
+              "p25": 23.7,
+              "p50": 28.2,
+              "p75": 34.5
+            },
+            "women": {
+              "p25": 17.2,
+              "p50": 20.0,
+              "p75": 23.8
+            }
+          },
+          {
+            "from": 70,
+            "to": 79,
+            "men": {
+              "p25": 20.4,
+              "p50": 24.4,
+              "p75": 30.4
+            },
+            "women": {
+              "p25": 15.6,
+              "p50": 18.3,
+              "p75": 20.8
+            }
+          }
+        ]
+      },
+      "meaning": "Cardio fitness (VO2 max) reference values by age and sex: 25th, 50th (median) and 75th percentile from measured treadmill tests.",
+      "issuer": "Kaminsky LA, Arena R, Myers J. Reference Standards for Cardiorespiratory Fitness Measured With Cardiopulmonary Exercise Testing: Data From the FRIEND Registry. Mayo Clin Proc 2015;90(11):1515-1523",
+      "sourceURL": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4919021",
+      "sourceVersionDate": "2015-11 (journal issue)",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "note": "US adults without known heart disease, ages 20-79. The app reads VO2 max from Apple Health (an Apple Watch estimate) and compares it with these measured values. Checked through the US National Library of Medicine's PubMed Central record PMC4919021.",
+      "verify": [
+        "20.29\\s+29\\.0\\s+32\\.1\\s+40\\.1\\s+48\\.0\\s+55\\.2\\s+61\\.8\\s+66\\.3",
+        "30.39\\s+27\\.2\\s+30\\.2\\s+35\\.9\\s+42\\.4\\s+49\\.2\\s+56\\.5\\s+59\\.8",
+        "40.49\\s+24\\.2\\s+26\\.8\\s+31\\.9\\s+37\\.8\\s+45\\.0\\s+52\\.1\\s+55\\.6",
+        "50.59\\s+20\\.9\\s+22\\.8\\s+27\\.1\\s+32\\.6\\s+39\\.7\\s+45\\.6\\s+50\\.7",
+        "60.69\\s+17\\.4\\s+19\\.8\\s+23\\.7\\s+28\\.2\\s+34\\.5\\s+40\\.3\\s+43\\.0",
+        "70.79\\s+16\\.3\\s+17\\.1\\s+20\\.4\\s+24\\.4\\s+30\\.4\\s+36\\.6\\s+39\\.7",
+        "20.29\\s+21\\.7\\s+23\\.9\\s+30\\.5\\s+37\\.6\\s+44\\.7\\s+51\\.3\\s+56\\.0",
+        "30.39\\s+19\\.0\\s+20\\.9\\s+25\\.3\\s+30\\.2\\s+36\\.1\\s+41\\.4\\s+45\\.8",
+        "40.49\\s+17\\.0\\s+18\\.8\\s+22\\.1\\s+26\\.7\\s+32\\.4\\s+38\\.4\\s+41\\.7",
+        "50.59\\s+16\\.0\\s+17\\.3\\s+19\\.9\\s+23\\.4\\s+27\\.6\\s+32\\.0\\s+35\\.9",
+        "60.69\\s+13\\.4\\s+14\\.6\\s+17\\.2\\s+20\\.0\\s+23\\.8\\s+27\\.0\\s+29\\.4",
+        "70.79\\s+13\\.1\\s+13\\.6\\s+15\\.6\\s+18\\.3\\s+20\\.8\\s+23\\.1\\s+24\\.1"
+      ],
+      "pageURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4919021/"
+    },
+    {
+      "id": "sts.oneminute",
+      "values": {
+        "seconds": 60,
+        "labels": {
+          "below": "Below the usual range",
+          "within": "In the usual range",
+          "above": "Above the usual range"
+        },
+        "groups": [
+          {
+            "from": 20,
+            "to": 24,
+            "men": {
+              "p25": 41,
+              "p50": 50,
+              "p75": 57
+            },
+            "women": {
+              "p25": 39,
+              "p50": 47,
+              "p75": 55
+            }
+          },
+          {
+            "from": 25,
+            "to": 29,
+            "men": {
+              "p25": 40,
+              "p50": 48,
+              "p75": 56
+            },
+            "women": {
+              "p25": 40,
+              "p50": 47,
+              "p75": 54
+            }
+          },
+          {
+            "from": 30,
+            "to": 34,
+            "men": {
+              "p25": 40,
+              "p50": 47,
+              "p75": 56
+            },
+            "women": {
+              "p25": 37,
+              "p50": 45,
+              "p75": 51
+            }
+          },
+          {
+            "from": 35,
+            "to": 39,
+            "men": {
+              "p25": 38,
+              "p50": 47,
+              "p75": 58
+            },
+            "women": {
+              "p25": 37,
+              "p50": 42,
+              "p75": 50
+            }
+          },
+          {
+            "from": 40,
+            "to": 44,
+            "men": {
+              "p25": 37,
+              "p50": 45,
+              "p75": 53
+            },
+            "women": {
+              "p25": 35,
+              "p50": 41,
+              "p75": 48
+            }
+          },
+          {
+            "from": 45,
+            "to": 49,
+            "men": {
+              "p25": 35,
+              "p50": 44,
+              "p75": 52
+            },
+            "women": {
+              "p25": 35,
+              "p50": 41,
+              "p75": 50
+            }
+          },
+          {
+            "from": 50,
+            "to": 54,
+            "men": {
+              "p25": 35,
+              "p50": 42,
+              "p75": 53
+            },
+            "women": {
+              "p25": 33,
+              "p50": 39,
+              "p75": 47
+            }
+          },
+          {
+            "from": 55,
+            "to": 59,
+            "men": {
+              "p25": 33,
+              "p50": 41,
+              "p75": 48
+            },
+            "women": {
+              "p25": 30,
+              "p50": 36,
+              "p75": 43
+            }
+          },
+          {
+            "from": 60,
+            "to": 64,
+            "men": {
+              "p25": 31,
+              "p50": 37,
+              "p75": 46
+            },
+            "women": {
+              "p25": 28,
+              "p50": 34,
+              "p75": 40
+            }
+          },
+          {
+            "from": 65,
+            "to": 69,
+            "men": {
+              "p25": 29,
+              "p50": 35,
+              "p75": 44
+            },
+            "women": {
+              "p25": 27,
+              "p50": 33,
+              "p75": 40
+            }
+          },
+          {
+            "from": 70,
+            "to": 74,
+            "men": {
+              "p25": 27,
+              "p50": 32,
+              "p75": 40
+            },
+            "women": {
+              "p25": 25,
+              "p50": 30,
+              "p75": 36
+            }
+          },
+          {
+            "from": 75,
+            "to": 79,
+            "men": {
+              "p25": 25,
+              "p50": 30,
+              "p75": 37
+            },
+            "women": {
+              "p25": 22,
+              "p50": 27,
+              "p75": 30
+            }
+          }
+        ]
+      },
+      "meaning": "1-minute sit-to-stand test: how many times you stand up from a chair and sit back down in 60 seconds. 25th, 50th (median) and 75th percentile by age and sex.",
+      "issuer": "Strassmann A, et al. Population-based reference values for the 1-min sit-to-stand test. Int J Public Health 2013;58:949-953",
+      "sourceURL": "https://link.springer.com/article/10.1007/s00038-013-0504-z/tables/2",
+      "sourceVersionDate": "2013-08-24 (published online)",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "note": "6,926 adults in Switzerland, ages 20-79. Chair about 46 cm high with no arm rests, arms not used to push, legs fully straight at the top.",
+      "verify": [
+        "20.24\\s+27\\s+41\\s+50\\s+57\\s+72\\s+31\\s+39\\s+47\\s+55\\s+70",
+        "25.29\\s+29\\s+40\\s+48\\s+56\\s+74\\s+30\\s+40\\s+47\\s+54\\s+68",
+        "30.34\\s+28\\s+40\\s+47\\s+56\\s+72\\s+27\\s+37\\s+45\\s+51\\s+68",
+        "35.39\\s+27\\s+38\\s+47\\s+58\\s+72\\s+25\\s+37\\s+42\\s+50\\s+63",
+        "40.44\\s+25\\s+37\\s+45\\s+53\\s+69\\s+26\\s+35\\s+41\\s+48\\s+65",
+        "45.49\\s+25\\s+35\\s+44\\s+52\\s+70\\s+25\\s+35\\s+41\\s+50\\s+63",
+        "50.54\\s+24\\s+35\\s+42\\s+53\\s+67\\s+23\\s+33\\s+39\\s+47\\s+60",
+        "55.59\\s+22\\s+33\\s+41\\s+48\\s+63\\s+21\\s+30\\s+36\\s+43\\s+61",
+        "60.64\\s+20\\s+31\\s+37\\s+46\\s+63\\s+20\\s+28\\s+34\\s+40\\s+55",
+        "65.69\\s+20\\s+29\\s+35\\s+44\\s+60\\s+19\\s+27\\s+33\\s+40\\s+53",
+        "70.74\\s+19\\s+27\\s+32\\s+40\\s+59\\s+17\\s+25\\s+30\\s+36\\s+51",
+        "75.79\\s+16\\s+25\\s+30\\s+37\\s+56\\s+13\\s+22\\s+27\\s+30\\s+43"
+      ]
+    },
+    {
+      "id": "balance.oneleg",
+      "values": {
+        "maxSeconds": 45,
+        "trials": 3,
+        "groups": [
+          {
+            "from": 18,
+            "to": 39,
+            "mean": 44.7
+          },
+          {
+            "from": 40,
+            "to": 49,
+            "mean": 41.9
+          },
+          {
+            "from": 50,
+            "to": 59,
+            "mean": 41.2
+          },
+          {
+            "from": 60,
+            "to": 69,
+            "mean": 32.1
+          },
+          {
+            "from": 70,
+            "to": 79,
+            "mean": 21.5
+          },
+          {
+            "from": 80,
+            "to": 99,
+            "mean": 9.4
+          }
+        ]
+      },
+      "meaning": "One-leg stand, eyes open: the best of 3 tries, stopped at 45 seconds. Average time by age group.",
+      "issuer": "Springer BA, Marin R, Cyhan T, Roberts H, Gill NW. Normative values for the unipedal stance test with eyes open and closed. J Geriatr Phys Ther 2007;30(1):8-15",
+      "sourceURL": "https://geriatrictoolkit.missouri.edu/balance/Normative_Values_for_the_Unipedal_Stance_Test_Springer-JGPT.pdf",
+      "sourceVersionDate": "2007 (journal issue)",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "note": "549 adults ages 18-99, arms crossed, barefoot. The study found no difference between men and women, so one average is used. The test stops at 45 seconds, so it cannot tell strong balancers apart.",
+      "verify": [
+        "18-39\\s+Female.{0,60}?45\\.1 \\(0\\.1\\)\\s+44\\.4 \\(4\\.1\\)\\s+44\\.7",
+        "40-49\\s+Female.{0,60}?42\\.1 \\(9\\.5\\)\\s+41\\.6 \\(10\\.2\\)\\s+41\\.9",
+        "50-59\\s+Female.{0,60}?40\\.9 \\(10\\.0\\)\\s+41\\.5 \\(10\\.5\\)\\s+41\\.2",
+        "60-69\\s+Female.{0,60}?30\\.4 \\(16\\.4\\)\\s+33\\.8 \\(16\\.0\\)\\s+32\\.1",
+        "70-79\\s+Female.{0,60}?16\\.7 \\(15\\.0\\)\\s+25\\.9 \\(18\\.1\\)\\s+21\\.5",
+        "80-99\\s+Female.{0,60}?10\\.6 \\(13\\.2\\)\\s+8\\.7 \\(12\\.6\\)\\s+9\\.4"
+      ]
+    },
+    {
+      "id": "chairstand.cdc",
+      "values": {
+        "seconds": 30,
+        "minAge": 60,
+        "labels": {
+          "below": "Below average",
+          "notBelow": "Not below average"
+        },
+        "groups": [
+          {
+            "from": 60,
+            "to": 64,
+            "menBelow": 14,
+            "womenBelow": 12
+          },
+          {
+            "from": 65,
+            "to": 69,
+            "menBelow": 12,
+            "womenBelow": 11
+          },
+          {
+            "from": 70,
+            "to": 74,
+            "menBelow": 12,
+            "womenBelow": 10
+          },
+          {
+            "from": 75,
+            "to": 79,
+            "menBelow": 11,
+            "womenBelow": 10
+          },
+          {
+            "from": 80,
+            "to": 84,
+            "menBelow": 10,
+            "womenBelow": 9
+          },
+          {
+            "from": 85,
+            "to": 89,
+            "menBelow": 8,
+            "womenBelow": 8
+          },
+          {
+            "from": 90,
+            "to": 94,
+            "menBelow": 7,
+            "womenBelow": 4
+          }
+        ]
+      },
+      "meaning": "30-second chair stand (ages 60 and up): stands in 30 seconds with arms crossed on the chest. A score under the number for your age and sex is below average.",
+      "issuer": "CDC STEADI (Stopping Elderly Accidents, Deaths & Injuries): 30-Second Chair Stand assessment",
+      "sourceURL": "https://www.cdc.gov/steadi/media/pdfs/STEADI-Assessment-30Sec-508.pdf",
+      "sourceVersionDate": "CDC STEADI assessment sheet (undated PDF)",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "note": "CDC states a below average score indicates a risk for falls. The app shows the label and the consult bar.",
+      "verify": [
+        "60-64\\s*<\\s*14\\s*<\\s*12",
+        "65-69\\s*<\\s*12\\s*<\\s*11",
+        "70-74\\s*<\\s*12\\s*<\\s*10",
+        "75-79\\s*<\\s*11\\s*<\\s*10",
+        "80-84\\s*<\\s*10\\s*<\\s*9",
+        "85-89\\s*<\\s*8\\s*<\\s*8",
+        "90-94\\s*<\\s*7\\s*<\\s*4",
+        "Below Average Scores"
+      ]
+    },
+    {
+      "id": "activity.adults",
+      "values": {
+        "moderateMinutes": 150,
+        "vigorousMinutes": 75,
+        "strengthDays": 2
+      },
+      "meaning": "Weekly activity for adults: at least 150 minutes of moderate activity (or 75 minutes vigorous) and at least 2 days of muscle-strengthening activity.",
+      "issuer": "CDC: Adult Activity, An Overview (Physical Activity Guidelines for Americans)",
+      "sourceURL": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+      "sourceVersionDate": "2023-12-20 (page date)",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "note": "My Plan builds its weekly targets from these numbers.",
+      "verify": [
+        "150 minutes of moderate-intensity physical activity a week",
+        "75 minutes of vigorous-intensity",
+        "2 days of muscle-strengthening activity each week"
+      ]
+    },
+    {
+      "id": "activity.older",
+      "values": {
+        "fromAge": 65,
+        "moderateMinutes": 150,
+        "vigorousMinutes": 75,
+        "strengthDays": 2,
+        "balance": true
+      },
+      "meaning": "Weekly activity for adults 65 and older: the same 150 minutes and 2 strength days, plus activities to improve balance.",
+      "issuer": "CDC: Older Adult Activity, An Overview (Physical Activity Guidelines for Americans)",
+      "sourceURL": "https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html",
+      "sourceVersionDate": "2025-12-04 (page date)",
+      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "note": "My Plan adds balance practice to every week from this age.",
+      "verify": [
+        "adults 65 and older need",
+        "At least 150 minutes at moderate intensity",
+        "At least 2 days of activities that strengthen muscles",
+        "Activities to improve balance"
+      ]
+    },
+    {
+      "id": "bodyage.method",
+      "values": {
+        "components": [
+          "vo2.friend",
+          "sts.oneminute",
+          "balance.oneleg"
+        ],
+        "minAge": 20,
+        "maxAge": 79,
+        "text": "Body Age is the age whose typical result matches yours, averaged over the tests you have done. It is a motivational estimate, not a medical age."
+      },
+      "meaning": "How Body Age is worked out: for each test with published age values (cardio fitness, 1-minute sit-to-stand, one-leg balance) the app finds the age whose typical result equals yours, then averages those ages equally. Tests you have not done are left out, never guessed.",
+      "issuer": "The Body Guard (own method, built only on the published reference values listed in this database)",
+      "sourceURL": "",
+      "sourceVersionDate": "own method (REV 17.0, 2026-11-09)",
+      "lastVerifiedEastern": "own wording (no external source)",
+      "note": "Typical result = the median (cardio, sit-to-stand) or the average (balance) of each age group, joined in a straight line between age-group midpoints. Results beyond the youngest or oldest group count as that group's age.",
+      "verify": []
     },
     {
       "id": "consult.text",
