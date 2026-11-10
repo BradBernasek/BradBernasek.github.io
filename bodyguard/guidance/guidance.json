@@ -1,5 +1,5 @@
 {
-  "registryVersion": 3,
+  "registryVersion": 4,
   "registryDateEastern": "2026-11-09",
   "changeLog": [
     {
@@ -16,6 +16,11 @@
       "version": 3,
       "dateEastern": "2026-11-09",
       "note": "Added the numbers behind Body Age, the fitness tests and My Plan: waist-to-hip cut-off (WHO), cardio fitness by age (FRIEND registry), 1-minute sit-to-stand by age (Strassmann 2013), one-leg balance by age (Springer 2007), 30-second chair stand (CDC STEADI), weekly activity targets (CDC)."
+    },
+    {
+      "version": 4,
+      "dateEastern": "2026-11-09",
+      "note": "REV 17.1 Voice Coach: official protocol blocks for one-leg balance (Springer 2007) and 30-second chair stand (CDC STEADI), each line tied to a word-for-word quote verified live; 1-minute sit-to-stand protocol marked not verified (tap-only); coach wording entry."
     }
   ],
   "entries": [
@@ -37,7 +42,7 @@
       "issuer": "CDC",
       "sourceURL": "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
       "sourceVersionDate": "2024-03-19 (page last reviewed)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "Class 1/2/3 obesity splits (35, 40) exist at the source; the app shows one Obesity range.",
       "verify": [
         "Less than 18\\.5",
@@ -86,7 +91,7 @@
       "issuer": "WHO / WMO / UNEP / ICNIRP (Global Solar UV Index)",
       "sourceURL": "https://www.icnirp.org/en/applications/uv-index/index.html",
       "sourceVersionDate": "Global Solar UVI 2002; Review workshop report 2017 (page undated)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "WHO's own Q&A (2022) groups the same scale into 0-2, 3-7, 8+ with advice; the five-band table is the global index. Hex values are the app's rendering of the official colour names.",
       "verify": [
         "0\\s*[-–]\\s*2",
@@ -128,7 +133,7 @@
       "issuer": "American Academy of Dermatology",
       "sourceURL": "https://aad.org/public/diseases/skin-cancer/find/at-risk/abcdes",
       "sourceVersionDate": "undated page (copyright 2026)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "The source describes D as usually greater than 6 mm; the app shows the word only and never states a size.",
       "verify": [
         "Asymmetry",
@@ -150,7 +155,7 @@
       "issuer": "Skin Cancer Foundation",
       "sourceURL": "https://www.skincancer.org/early-detection/self-exams/",
       "sourceVersionDate": "2024-07-02 (page metadata modified date)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "More frequent cadences in Settings (every 2 weeks, weekly) are the user's choice, not guidance.",
       "verify": [
         "head-to-toe",
@@ -166,7 +171,7 @@
       "issuer": "Skin Cancer Foundation",
       "sourceURL": "https://www.skincancer.org/early-detection/self-exams/",
       "sourceVersionDate": "2024-07-02 (page metadata modified date)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "The 2-week lead time before the anniversary is the app's own nudge, not guidance.",
       "verify": [
         "at least once a year"
@@ -188,7 +193,7 @@
       "issuer": "NICE (NG246)",
       "sourceURL": "https://www.nice.org.uk/guidance/NG246/chapter/Identifying-and-assessing-overweight-obesity-and-central-adiposity",
       "sourceVersionDate": "NG246 recommendations (page undated; recommendation tags 2006-2026)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "NICE words the bands as central adiposity with no / increased / further increased health risks. The app shows only the band names plus the consult bar.",
       "verify": [
         "waist-to-height ratio 0\\.4 to 0\\.49",
@@ -205,7 +210,7 @@
       "issuer": "NHS (Obesity)",
       "sourceURL": "https://www.nhs.uk/conditions/obesity/",
       "sourceVersionDate": "page last reviewed 2026-04-29; next review 2029-04-29",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "NHS states: try to keep your waist size to less than half your height.",
       "verify": [
         "less than half your height"
@@ -228,7 +233,7 @@
       "issuer": "BMJ 1995 (Lean, Han, Morrison): Waist circumference as a measure for indicating need for weight management",
       "sourceURL": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2550221",
       "sourceVersionDate": "1995-07-15 (BMJ 311:158-161)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "Original peer-reviewed source of the 94/102 cm (men) and 80/88 cm (women) action levels; the NHS page no longer lists them.",
       "verify": [
         "94 cm",
@@ -258,7 +263,7 @@
       "issuer": "US Dept of Defense (Hodgdon & Beckett 1984; Hodgdon & Friedl 1999), as reproduced in Foulis et al., Frontiers in Physiology 2023",
       "sourceURL": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2023.1183836/full",
       "sourceVersionDate": "2023-06-07 (article published)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "An estimate. The same article reports circumference methods do not reliably capture small body-composition changes, so the app labels it an estimate and does not rate it.",
       "verify": [
         "86\\.010",
@@ -282,7 +287,7 @@
       "issuer": "Mifflin MD, St Jeor ST et al., Am J Clin Nutr 1990;51:241-247 (PubMed 2305711)",
       "sourceURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:2305711%20AND%20SRC:MED&resultType=core&format=json",
       "sourceVersionDate": "1990-02 (journal issue)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "A population estimate of resting energy use in healthy adults, not a measurement.",
       "verify": [
         "9\\.99 x weight",
@@ -305,7 +310,7 @@
       "issuer": "World Health Organization: Waist circumference and waist-hip ratio, report of a WHO expert consultation (Geneva, 8-11 December 2008)",
       "sourceURL": "https://iris.who.int/server/api/core/bitstreams/ca408ade-05c9-4b7c-8967-6ee5b5e0ccd8/content",
       "sourceVersionDate": "2011 (report published; consultation held 2008-12)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "WHO lists these cut-offs with the wording 'substantially increased' risk of metabolic complications. The app shows the cut-off and the consult bar, never a disease.",
       "verify": [
         "Waist.hip ratio\\s*≥\\s*0\\.90\\s*cm\\s*\\(M\\);\\s*≥\\s*0\\.85\\s*cm\\s*\\(W\\)\\s*Substantially increased"
@@ -411,7 +416,7 @@
       "issuer": "Kaminsky LA, Arena R, Myers J. Reference Standards for Cardiorespiratory Fitness Measured With Cardiopulmonary Exercise Testing: Data From the FRIEND Registry. Mayo Clin Proc 2015;90(11):1515-1523",
       "sourceURL": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4919021",
       "sourceVersionDate": "2015-11 (journal issue)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "US adults without known heart disease, ages 20-79. The app reads VO2 max from Apple Health (an Apple Watch estimate) and compares it with these measured values. Checked through the US National Library of Medicine's PubMed Central record PMC4919021.",
       "verify": [
         "20.29\\s+29\\.0\\s+32\\.1\\s+40\\.1\\s+48\\.0\\s+55\\.2\\s+61\\.8\\s+66\\.3",
@@ -613,7 +618,7 @@
       "issuer": "Strassmann A, et al. Population-based reference values for the 1-min sit-to-stand test. Int J Public Health 2013;58:949-953",
       "sourceURL": "https://link.springer.com/article/10.1007/s00038-013-0504-z/tables/2",
       "sourceVersionDate": "2013-08-24 (published online)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "6,926 adults in Switzerland, ages 20-79. Chair about 46 cm high with no arm rests, arms not used to push, legs fully straight at the top.",
       "verify": [
         "20.24\\s+27\\s+41\\s+50\\s+57\\s+72\\s+31\\s+39\\s+47\\s+55\\s+70",
@@ -628,7 +633,18 @@
         "65.69\\s+20\\s+29\\s+35\\s+44\\s+60\\s+19\\s+27\\s+33\\s+40\\s+53",
         "70.74\\s+19\\s+27\\s+32\\s+40\\s+59\\s+17\\s+25\\s+30\\s+36\\s+51",
         "75.79\\s+16\\s+25\\s+30\\s+37\\s+56\\s+13\\s+22\\s+27\\s+30\\s+43"
-      ]
+      ],
+      "protocol": {
+        "status": "notVerified",
+        "source": "Strassmann A, et al. Int J Public Health 2013;58:949-953 (Methods)",
+        "sourceURL": "https://link.springer.com/article/10.1007/s00038-013-0504-z",
+        "sourceVersionDate": "2013-08-24 (published online)",
+        "lastVerifiedEastern": "2026-11-09 21:23 ET",
+        "reason": "The test procedure is in the paper's Methods, which the publisher page shows only to subscribers, and the open copy (doc.rero.ch/record/316283) answers HTTP 410 Gone (RERO DOC closed). It cannot be re-checked live, so this test stays tap-only with no spoken coaching. Its reference values (Table 2) are still verified live.",
+        "verify": [
+          "Population-based reference values for the 1-min sit-to-stand test"
+        ]
+      }
     },
     {
       "id": "balance.oneleg",
@@ -672,7 +688,7 @@
       "issuer": "Springer BA, Marin R, Cyhan T, Roberts H, Gill NW. Normative values for the unipedal stance test with eyes open and closed. J Geriatr Phys Ther 2007;30(1):8-15",
       "sourceURL": "https://geriatrictoolkit.missouri.edu/balance/Normative_Values_for_the_Unipedal_Stance_Test_Springer-JGPT.pdf",
       "sourceVersionDate": "2007 (journal issue)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "549 adults ages 18-99, arms crossed, barefoot. The study found no difference between men and women, so one average is used. The test stops at 45 seconds, so it cannot tell strong balancers apart.",
       "verify": [
         "18-39\\s+Female.{0,60}?45\\.1 \\(0\\.1\\)\\s+44\\.4 \\(4\\.1\\)\\s+44\\.7",
@@ -681,7 +697,122 @@
         "60-69\\s+Female.{0,60}?30\\.4 \\(16\\.4\\)\\s+33\\.8 \\(16\\.0\\)\\s+32\\.1",
         "70-79\\s+Female.{0,60}?16\\.7 \\(15\\.0\\)\\s+25\\.9 \\(18\\.1\\)\\s+21\\.5",
         "80-99\\s+Female.{0,60}?10\\.6 \\(13\\.2\\)\\s+8\\.7 \\(12\\.6\\)\\s+9\\.4"
-      ]
+      ],
+      "protocol": {
+        "status": "verified",
+        "source": "Springer BA, et al. J Geriatr Phys Ther 2007;30(1):8-15, Methods: Study Design (eyes-open condition)",
+        "sourceURL": "https://geriatrictoolkit.missouri.edu/balance/Normative_Values_for_the_Unipedal_Stance_Test_Springer-JGPT.pdf",
+        "sourceVersionDate": "2007 (journal issue)",
+        "lastVerifiedEastern": "2026-11-09 21:23 ET",
+        "quotes": {
+          "stand": "Eligible subjects were asked to stand barefoot on the limb of their choice, with the other limb raised so that the raised foot was near but not touching the ankle of their stance limb.",
+          "eyes": "Each subject was asked to focus on a spot on the wall at eye level in front of him, for the duration of the eyes open test.",
+          "arms": "Prior to raising the limb, the subject was instructed to cross his arms over the chest.",
+          "start": "Time commenced when the subject raised the foot off the floor.",
+          "stop": "Time ended when the subject either: (1) used his arms (ie, uncrossed arms), (2) used the raised foot (moved it toward or away from the standing limb or touched the floor), (3) moved the weight-bearing foot to maintain his balance (ie, rotated foot on the ground), (4) a maximum of 45 seconds had elapsed, or (5) opened eyes on eyes closed trials.",
+          "trials": "The procedure was repeated 3 times and each time was recorded on the data collection sheet.",
+          "rest": "At least 5 minutes of rest were allowed between each trial set to avoid fatigue.",
+          "kept": "For the inferential statistics, we report only the results of the best since that is how the test is used clinically."
+        },
+        "verbatimScript": false,
+        "scriptNote": "The paper gives no words to read to the person, so each spoken line says only what the cited sentence requires, in plain words. plainWords lists the only word swaps used.",
+        "plainWords": {
+          "leg": "limb",
+          "look": "focus",
+          "you": "him",
+          "your": "his"
+        },
+        "setup": {
+          "text": "Barefoot, standing, in front of a wall with a spot at eye level.",
+          "basis": [
+            "stand",
+            "eyes"
+          ]
+        },
+        "startPosition": {
+          "text": "Standing on both feet, arms crossed over the chest, looking at the spot.",
+          "basis": [
+            "arms",
+            "eyes"
+          ]
+        },
+        "instructions": [
+          {
+            "say": "Stand barefoot, on the leg of your choice.",
+            "basis": "stand",
+            "when": "setup"
+          },
+          {
+            "say": "Look at a spot on the wall at eye level, in front of you.",
+            "basis": "eyes",
+            "when": "setup"
+          },
+          {
+            "say": "Cross your arms over your chest.",
+            "basis": "arms",
+            "when": "setup"
+          },
+          {
+            "say": "Raise the other foot, near but not touching your ankle.",
+            "basis": "stand",
+            "when": "go"
+          }
+        ],
+        "startTrigger": {
+          "type": "footOff",
+          "text": "Timing starts when the raised foot leaves the floor.",
+          "basis": "start"
+        },
+        "stopConditions": [
+          {
+            "id": "armsUncrossed",
+            "text": "Arms uncrossed",
+            "detect": "camera",
+            "basis": "stop",
+            "phrase": "used his arms (ie, uncrossed arms)"
+          },
+          {
+            "id": "raisedFootDown",
+            "text": "Raised foot touches the floor",
+            "detect": "camera",
+            "basis": "stop",
+            "phrase": "touched the floor"
+          },
+          {
+            "id": "raisedFootMoved",
+            "text": "Raised foot moves toward or away from the standing leg",
+            "detect": "camera",
+            "basis": "stop",
+            "phrase": "moved it toward or away from the standing limb"
+          },
+          {
+            "id": "standingFootMoved",
+            "text": "Standing foot moves to keep balance",
+            "detect": "camera",
+            "basis": "stop",
+            "phrase": "moved the weight-bearing foot to maintain his balance"
+          },
+          {
+            "id": "maxTime",
+            "text": "45 seconds reached",
+            "detect": "timer",
+            "basis": "stop",
+            "phrase": "a maximum of 45 seconds had elapsed"
+          }
+        ],
+        "maxSeconds": 45,
+        "trials": 3,
+        "restSeconds": 300,
+        "restBasis": "rest",
+        "kept": "best",
+        "keptBasis": "kept",
+        "countRule": null,
+        "safety": {
+          "text": "The study gives no safety instruction for the person tested.",
+          "basis": null
+        },
+        "verify": []
+      }
     },
     {
       "id": "chairstand.cdc",
@@ -741,7 +872,7 @@
       "issuer": "CDC STEADI (Stopping Elderly Accidents, Deaths & Injuries): 30-Second Chair Stand assessment",
       "sourceURL": "https://www.cdc.gov/steadi/media/pdfs/STEADI-Assessment-30Sec-508.pdf",
       "sourceVersionDate": "CDC STEADI assessment sheet (undated PDF)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "CDC states a below average score indicates a risk for falls. The app shows the label and the consult bar.",
       "verify": [
         "60-64\\s*<\\s*14\\s*<\\s*12",
@@ -752,7 +883,126 @@
         "85-89\\s*<\\s*8\\s*<\\s*8",
         "90-94\\s*<\\s*7\\s*<\\s*4",
         "Below Average Scores"
-      ]
+      ],
+      "protocol": {
+        "status": "verified",
+        "source": "CDC STEADI, Assessment: 30-Second Chair Stand (sheet dated 2017)",
+        "sourceURL": "https://www.cdc.gov/steadi/media/pdfs/STEADI-Assessment-30Sec-508.pdf",
+        "sourceVersionDate": "2017 (printed on the sheet)",
+        "lastVerifiedEastern": "2026-11-09 21:23 ET",
+        "quotes": {
+          "equipment": "Equipment: A chair with a straight back without arm rests (seat 17” high), and a stopwatch.",
+          "i1": "Sit in the middle of the chair.",
+          "i2": "Place your hands on the opposite shoulder crossed, at the wrists.",
+          "i3": "Keep your feet flat on the floor.",
+          "i4": "Keep your back straight, and keep your arms against your chest.",
+          "i5": "On “Go,” rise to a full standing position, then sit back down again.",
+          "i6": "Repeat this for 30 seconds.",
+          "go": "On the word “Go,” begin timing.",
+          "arms": "If the patient must use his/her arms to stand, stop the test. Record “0” for the number and score.",
+          "count": "Count the number of times the patient comes to a full standing position in 30 seconds.",
+          "half": "If the patient is over halfway to a standing position when 30 seconds have elapsed, count it as a stand.",
+          "safety": "NOTE: Stand next to the patient for safety."
+        },
+        "verbatimScript": true,
+        "scriptNote": "CDC prints the words to say (Instruct the patient: 1-6, and Go). They are read word for word.",
+        "plainWords": {},
+        "setup": {
+          "text": "A chair with a straight back without arm rests (seat 17 inches high).",
+          "basis": [
+            "equipment"
+          ]
+        },
+        "startPosition": {
+          "text": "Sitting in the middle of the chair, hands on the opposite shoulders crossed at the wrists, feet flat, back straight, arms against the chest.",
+          "basis": [
+            "i1",
+            "i2",
+            "i3",
+            "i4"
+          ]
+        },
+        "instructions": [
+          {
+            "say": "Sit in the middle of the chair.",
+            "basis": "i1",
+            "when": "setup"
+          },
+          {
+            "say": "Place your hands on the opposite shoulder crossed, at the wrists.",
+            "basis": "i2",
+            "when": "setup"
+          },
+          {
+            "say": "Keep your feet flat on the floor.",
+            "basis": "i3",
+            "when": "setup"
+          },
+          {
+            "say": "Keep your back straight, and keep your arms against your chest.",
+            "basis": "i4",
+            "when": "setup"
+          },
+          {
+            "say": "On Go, rise to a full standing position, then sit back down again.",
+            "basis": "i5",
+            "when": "setup"
+          },
+          {
+            "say": "Repeat this for 30 seconds.",
+            "basis": "i6",
+            "when": "setup"
+          },
+          {
+            "say": "Go.",
+            "basis": "go",
+            "when": "go"
+          }
+        ],
+        "startTrigger": {
+          "type": "word",
+          "word": "Go",
+          "text": "Timing starts on the word Go.",
+          "basis": "go"
+        },
+        "stopConditions": [
+          {
+            "id": "armsUsed",
+            "text": "Arms used to stand: the test stops and the score is 0",
+            "detect": "camera",
+            "basis": "arms",
+            "score": 0,
+            "phrase": "must use his/her arms to stand, stop the test"
+          },
+          {
+            "id": "maxTime",
+            "text": "30 seconds reached",
+            "detect": "timer",
+            "basis": "i6",
+            "phrase": "30 seconds"
+          }
+        ],
+        "maxSeconds": 30,
+        "trials": 1,
+        "restSeconds": 0,
+        "restBasis": null,
+        "kept": "count",
+        "keptBasis": "count",
+        "countRule": {
+          "text": "Full standing positions in 30 seconds. Over halfway up when 30 seconds end counts as a stand.",
+          "basis": [
+            "count",
+            "half"
+          ],
+          "halfwayCounts": true
+        },
+        "safety": {
+          "text": "For safety, have someone stand next to you.",
+          "basis": "safety",
+          "say": true
+        },
+        "verify": []
+      }
     },
     {
       "id": "activity.adults",
@@ -765,7 +1015,7 @@
       "issuer": "CDC: Adult Activity, An Overview (Physical Activity Guidelines for Americans)",
       "sourceURL": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
       "sourceVersionDate": "2023-12-20 (page date)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "My Plan builds its weekly targets from these numbers.",
       "verify": [
         "150 minutes of moderate-intensity physical activity a week",
@@ -786,7 +1036,7 @@
       "issuer": "CDC: Older Adult Activity, An Overview (Physical Activity Guidelines for Americans)",
       "sourceURL": "https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html",
       "sourceVersionDate": "2025-12-04 (page date)",
-      "lastVerifiedEastern": "2026-11-09 19:21 ET",
+      "lastVerifiedEastern": "2026-11-09 21:23 ET",
       "note": "My Plan adds balance practice to every week from this age.",
       "verify": [
         "adults 65 and older need",
@@ -826,6 +1076,42 @@
       "sourceVersionDate": "own wording",
       "lastVerifiedEastern": "own wording (no external source)",
       "note": "No external source to re-check; it is the app's own rule. Kept here so no health wording lives outside the registry.",
+      "verify": []
+    },
+    {
+      "id": "voicecoach.words",
+      "values": {
+        "countdown": [
+          "3",
+          "2",
+          "1"
+        ],
+        "stop": "Stop.",
+        "sayStart": "Say start when you are ready.",
+        "hold": "Hold still in the start position.",
+        "ready": "Ready.",
+        "resultSeconds": "{value} seconds.",
+        "resultCount": "{value}.",
+        "rest": "Rest. Next try in {minutes} minutes.",
+        "restOver": "Rest is over.",
+        "tryN": "Try {n}.",
+        "best": "Best, {value} seconds.",
+        "saved": "Saved.",
+        "sample": "This is your coach voice.",
+        "commands": [
+          "start",
+          "stop",
+          "again",
+          "skip",
+          "done"
+        ]
+      },
+      "meaning": "The app's own short coaching words around the official test instructions: countdown, stop, rest, results. Never health instructions; those come only from each test's protocol block.",
+      "issuer": "The Body Guard (own coaching wording, REV 17.1, 2026-11-09)",
+      "sourceURL": "",
+      "sourceVersionDate": "own wording",
+      "lastVerifiedEastern": "own wording (no external source)",
+      "note": "Kept here so no spoken text lives in Swift. Countdown before the start trigger was asked for in the REV 17.1 spec.",
       "verify": []
     }
   ]
